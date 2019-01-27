@@ -1,11 +1,11 @@
 image: "ruby:2.5"
 
-deploy:
+pages:
+  stage: deploy
   before_script:
     - ruby -v
     - gem i bundler -v 1.17.3
     - bundle install -j $(nproc) --path vendor
-    - apt-get install nodejs
   script:
     - bundle exec middleman build --clean
   artifacts:
