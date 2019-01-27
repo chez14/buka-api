@@ -8,8 +8,11 @@ pages:
     - bundle install -j $(nproc) --path vendor
   script:
     - bundle exec middleman build --clean
+  after_script:
+    - if [ -d "build" ]; then rm -r build; fi
+    - mv build/* public
   artifacts:
     paths:
-    - build
+    - public
   only:
     - master
