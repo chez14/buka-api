@@ -5,11 +5,11 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  # - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
-includes:
-  - errors
+# includes:
+#   - errors
 
 search: true
 ---
@@ -17,6 +17,15 @@ search: true
 # Introduction
 
 Welcome to the Bukalapak API! You can use our API to access Bukalapak API endpoints, which can get information on products, transactions, and users, etc.
+
+<aside class="warning">
+THIS IS UNOFFICIAL DOCUMENTATION. PLEASE DO AT YOUR OWN RISK. I HAVE NO RESPONSIBILITY TO
+YOU.
+</aside>
+<aside class="warning">
+INI ADALAH DOKUMENTASI TIDAK RESMI. LANJUTKAN DENGAN TANGGUNG JAWAB ANDA SENDIRI.
+SAYA TIDAK MEMILIKI TANGGUNG JAWAB ATAS APAPUN YANG TERJADI.
+</aside>
 
 # Authentication
 
