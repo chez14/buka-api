@@ -6,11 +6,11 @@ pages:
     - ruby -v
     - gem i bundler -v 1.17.3
     - bundle install -j $(nproc) --path vendor
+    - if [ -d "public" ]; then rm -r public; fi
   script:
     - bundle exec middleman build --clean
   after_script:
-    - if [ -d "build" ]; then rm -r build; fi
-    - mv build/* public
+    - mv build public
   artifacts:
     paths:
     - public
