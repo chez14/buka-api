@@ -3,10 +3,12 @@ image: "ruby:2.5"
 deploy:
   before_script:
     - ruby -v
-    - gem i bundler -v 1.17.3 --path vendor
+    - gem i bundler -v 1.17.3
     - bundle install -j $(nproc) --path vendor
   script:
     - bundle exec middleman build --clean
   artifacts:
     paths:
     - build
+  only:
+    - master
